@@ -10,11 +10,11 @@ npm run dev
 
 This project needs:
 
-mongoDb (install with docker -> [PurpleBooth](https://github.com/madmerlln))
+mongoDb (install with docker -> [Docker Install](https://github.com/madmerlln))
 
 ## Authors
 
-* **Lucas Silva (madmerlln)** - [PurpleBooth](https://github.com/madmerlln)
+* **Lucas Silva (madmerlln)** - [Repository](https://github.com/madmerlln)
 
 ## License
 
