@@ -18,4 +18,6 @@ const User = mongoose.model('User');
 
 app.use('/api', require("./src/routes"));
 
-app.listen(4000);
+
+const port = process.env.PORT || 3000;
+app.listen(port);
