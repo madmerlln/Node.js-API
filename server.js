@@ -7,13 +7,14 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-mongoose.connect('mongodb://localhost:27017/nodeapi', {
+mongoose.connect('mongodb://madmerlin:Lukasr05159040@geonosis.mongodb.umbler.com:49096/attalea', {
     useNewUrlParser: true,
     useUnifiedTopology: true
 });
 requireDir('./src/models');
 
 const Product = mongoose.model('Product');
+const User = mongoose.model('User');
 
 app.use('/api', require("./src/routes"));
 

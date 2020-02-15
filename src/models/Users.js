@@ -1,28 +1,32 @@
 const mongoose = require('mongoose');
 const mongoosePaginate = require('mongoose-paginate');
 
-const ProductSchema = new mongoose.Schema({
-    title:{
+const UserSchema = new mongoose.Schema({
+    user:{
         type: String,
         required: true,
     },
-    description:{
+    email:{
         type: String,
         required: true,
     },
-    img_url:{
+    password:{
         type: String,
         required: true,
     },
-    preco:{
+    nome:{
         type: String,
         required: true,
     },
-    categoria:{
+    genre:{
         type: String,
         required: true,
     },
-    registro:{
+    birthday:{
+        type: Date,
+        required: true,
+    },
+    avatarUrl:{
         type: String,
         required: true,
     },
@@ -32,6 +36,6 @@ const ProductSchema = new mongoose.Schema({
     }
 })
 
-ProductSchema.plugin(mongoosePaginate);
+UserSchema.plugin(mongoosePaginate);
 
-mongoose.model('Product', ProductSchema);
+mongoose.model('User', UserSchema);
