@@ -14,16 +14,12 @@ const ProductSchema = new mongoose.Schema({
         type: String,
         required: true,
     },
-    preco:{
-        type: String,
-        required: true,
-    },
     categoria:{
         type: String,
         required: true,
     },
     registro:{
-        type: String,
+        type: Array,
         required: true,
     },
     createdAt:{

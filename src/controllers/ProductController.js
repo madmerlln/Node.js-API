@@ -9,7 +9,7 @@ module.exports = {
         } = req.query;
         const products = await Product.paginate({}, {
             page,
-            limit: 10
+            limit: 12
         });
 
         return res.json(products);

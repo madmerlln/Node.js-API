@@ -7,7 +7,7 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-mongoose.connect('mongodb://madmerlin:Lukasr05159040@geonosis.mongodb.umbler.com:49096/attalea', {
+mongoose.connect('mongodb://madmerlin:Lukasr05159040@geonosis.mongodb.umbler.com:46187/attalea', {
     useNewUrlParser: true,
     useUnifiedTopology: true
 });
